@@ -1,0 +1,18 @@
+.homelist {
+	min-height: 93vh;
+	display: flex;
+	flex-direction: column;
+	.infoBox {
+		display: flex;
+		margin: 0 8vw;
+		@media screen and (max-width: 600px) {
+			margin: 0 0.625rem;
+		}
+		flex: 1;
+		.itemBox {
+			flex: 1;
+			background-color: #fbf4f448;
+			padding: 0px 0 5px 0;
+		}
+	}
+}

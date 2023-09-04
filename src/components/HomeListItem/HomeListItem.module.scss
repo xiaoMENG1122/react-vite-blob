@@ -1,0 +1,22 @@
+.item {
+	border-bottom: 0.0938rem solid #6d65657a;
+	padding: 0.3125rem 1.25rem;
+	.itemTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.itemTopDate {
+			font-size: #aaa;
+		}
+		.itemTopTitle {
+			cursor: pointer;
+			background: linear-gradient(to right, #4e1709, #e94f07) no-repeat right bottom;
+			background-size: 0 2px;
+			transition: background-size 1000ms;
+			&:hover {
+				background-position-x: left;
+				background-size: 100% 2px;
+			}
+		}
+	}
+}

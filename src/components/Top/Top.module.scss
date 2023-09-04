@@ -1,0 +1,39 @@
+.zxtop {
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 90vw;
+	height: 8vh;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5vw 0;
+	border-bottom: 0.0625rem solid rgb(175, 170, 169);
+	background-color: #eef3f9c7;
+
+	.left {
+		display: flex;
+		min-width: 30%;
+		align-items: center;
+		cursor: pointer;
+		.title {
+			font-weight: 600;
+			margin: 0 0 0 0.625rem;
+			font-size: 1.5rem;
+		}
+		@media screen and (max-width: 600px) {
+			.title {
+				font-size: 1rem;
+			}
+		}
+		.logo {
+			transition: transform 0.7s ease-in;
+			&:hover {
+				transform: rotate(360deg);
+			}
+		}
+	}
+	.right {
+		width: 30%;
+		right: 0;
+	}
+}
